@@ -6,7 +6,12 @@ const config = {
 		// adapter: adapter({
 		// 	fallback: '404.html'
 		// }),
-		adapter: adapter(),
+		adapter: adapter({
+			// default options are shown
+			pages: 'docs',
+			assets: 'docs',
+			fallback: null
+		}),
 		prerender: {
 			entries: []
 		},		
